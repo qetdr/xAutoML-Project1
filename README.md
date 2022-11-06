@@ -23,7 +23,7 @@ Based on the problem at hand, you
 
 ### Third step
 - :x: Monitor the performance of you the constructed pipeline from the previous step **across different time budgets** (number of iterations) and report **the least time budget** that you are able **to outperform the baseline**.
-  - <font color = 'red' >DR comment: I understand this here so that we should plot accuracies from each trial and compare it with the accuracy in the baseline. I added this plot to the HPO NB.
+  - <font color = 'red' >DR comment: I understand this here so that we should plot accuracies from each trial and compare it with the accuracy in the baseline. I added this plot to the HPO NB. Although there's a number of iterations that is *kind of* indicating time cost, it may be more reasonable to run the codes again and measure the runtime.
   </font>
 
 ### Fourth step
