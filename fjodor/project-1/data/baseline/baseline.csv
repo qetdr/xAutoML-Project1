@@ -1,2 +1,0 @@
-model;brier_loss;auc;accuracy
-BaggingClassifier;0.036;0.977;0.981
