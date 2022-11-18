@@ -25,7 +25,7 @@ Based on the problem at hand, you
   - **SOLUTION**: We have defined a hyperparameter search space for the five best baseline classifiers. When running the HPO, the best results (i.e., accuracy) are presented alongside the time it took to reach this result as well as the hyperparameter set used for the best model.
 
 ### Third step :white_check_mark:
-- :x: Monitor the performance of you the constructed pipeline from the previous step **across different time budgets** (number of iterations) and report **the least time budget** that you are able **to outperform the baseline**.
+- Monitor the performance of you the constructed pipeline from the previous step **across different time budgets** (number of iterations) and report **the least time budget** that you are able **to outperform the baseline**.
   - **SOLUTION**: The performance of the constructed HPO pipeline is monitored over all trials and output is presented when either the model beats the baseline (in this case, accuracy and runtime are presented) or if the model has improved in comparison to previous iteration(s). Furthermore, we also display the relationship between hyperparameters and model performance (accuracy). Finally, in the model test stage, we present the model that beats the baseline AND has the lowest runtime until finding the best performance model.
 
 ### Fourth step :yellow_circle:
