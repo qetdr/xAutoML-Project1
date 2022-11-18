@@ -12,23 +12,24 @@ Each team (group of three) will work on a machine learning problem from end-to-e
 
 ### First step :white_check_mark:
 - **Choose a dataset**.
+  - **SOLUTION**: We chose the Water Quality Prediction dataset from kaggle.
 - **Build and train a baseline for comparison**.
 - To construct the baseline you do the following:
   - Try a set of possible machine learning algorithms (**13 algorithms**) using their **default hyperparameters** and **choose** the one with **the highest performance** for comparison.
+    - **SOLUTION**: We have now computed baselines for 13 different classifiers with their default hyperparameters. We selected the five best models based on the model accuracy.
   
 ### Second step :white_check_mark:
 Based on the problem at hand, you 
 - study the potential pipeline structure, algorithms or feature transformers at each step, hyper-parameters ranges. 
 - Use `hyperOpt` with the potential search space to beat the baseline.
+  - **SOLUTION**: We have defined a hyperparameter search space for the five best baseline classifiers. When running the HPO, the best results (i.e., accuracy) are presented alongside the time it took to reach this result as well as the hyperparameter set used for the best model.
 
-### Third step
+### Third step :white_check_mark:
 - :x: Monitor the performance of you the constructed pipeline from the previous step **across different time budgets** (number of iterations) and report **the least time budget** that you are able **to outperform the baseline**.
-  - <font color = 'red' >DR comment: I understand this here so that we should plot accuracies from each trial and compare it with the accuracy in the baseline. I added this plot to the HPO NB. Although there's a number of iterations that is *kind of* indicating time cost, it may be more reasonable to run the codes again and measure the runtime.
-  </font>
+  - **SOLUTION**: The performance of the constructed HPO pipeline is monitored over all trials and output is presented when either the model beats the baseline (in this case, accuracy and runtime are presented) or if the model has improved in comparison to previous iteration(s). Furthermore, we also display the relationship between hyperparameters and model performance (accuracy). Finally, in the model test stage, we present the model that beats the baseline AND has the lowest runtime until finding the best performance model.
 
-### Fourth step
+### Fourth step :yellow_circle:
 - :x: **Determine** whether the **difference in performance** between the constructed pipeline and the baseline **is statistically significant**.
-  - <font color = 'red' >DR comment: I guess here we should use the McNemar test (comparing the predictions of baseline vs best model). Either HW1 or HW6 should help!
-  </font>
+  - **SOLUTION**: We used the Friedman test with Nemenyi post-hocs. BUT: need to include the baseline.
 
 
