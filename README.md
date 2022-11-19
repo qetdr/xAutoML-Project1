@@ -5,7 +5,7 @@
 Dmitri Rozgonjuk <br>
 Lisanna Lehes <br>
 Marilin Moor <br>
-Fjodor Ševtšenko <br>
+(Fjodor Ševtšenko) - contributed with some discussion
 
 ## Assignment
 Each team (group of three) will work on a machine learning problem from end-to-end.
