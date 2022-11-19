@@ -28,8 +28,11 @@ Based on the problem at hand, you
 - Monitor the performance of you the constructed pipeline from the previous step **across different time budgets** (number of iterations) and report **the least time budget** that you are able **to outperform the baseline**.
   - **SOLUTION**: The performance of the constructed HPO pipeline is monitored over all trials and output is presented when either the model beats the baseline (in this case, accuracy and runtime are presented) or if the model has improved in comparison to previous iteration(s). Furthermore, we also display the relationship between hyperparameters and model performance (accuracy). Finally, in the model test stage, we present the model that beats the baseline AND has the lowest runtime until finding the best performance model.
 
-### Fourth step :yellow_circle:
-- :x: **Determine** whether the **difference in performance** between the constructed pipeline and the baseline **is statistically significant**.
-  - **SOLUTION**: We used the Friedman test with Nemenyi post-hocs. BUT: need to include the baseline.
+### Fourth step :white_check_mark:
+-  **Determine** whether the **difference in performance** between the constructed pipeline and the baseline **is statistically significant**.
+  - **SOLUTION**: Because the initial task wanted us to test the different between the baseline model and the model with HPO, we conducted a dependent-samples t-test. The reason for this is that when we are computing the accuracy scores for data splits, the data splits are the same for the both models.
 
+### Final step:
+- **Project write-up and presentation**
+  - SOLUTION: Currently merging the different parts of pipeline into one notebook. Also creating a slide deck for a presentation.
 
