@@ -13,15 +13,11 @@ Each team (group of three) will work on a machine learning problem from end-to-e
 ### First step :white_check_mark:
 - **Choose a dataset**.
   - **SOLUTION**: We chose the Water Quality Prediction dataset from kaggle.
-- **Build and train a baseline for comparison**.
-- To construct the baseline you do the following:
-  - Try a set of possible machine learning algorithms (**13 algorithms**) using their **default hyperparameters** and **choose** the one with **the highest performance** for comparison.
-    - **SOLUTION**: We have now computed baselines for 13 different classifiers with their default hyperparameters. We selected the five best models based on the model accuracy.
+- **Build and train a baseline for comparison**. To construct the baseline you do the following: Try a set of possible machine learning algorithms (**13 algorithms**) using their **default hyperparameters** and **choose** the one with **the highest performance** for comparison.
+  - **SOLUTION**: We have now computed baselines for 13 different classifiers with their default hyperparameters. We selected the five best models based on the model accuracy.
   
 ### Second step :white_check_mark:
-Based on the problem at hand, you 
-- study the potential pipeline structure, algorithms or feature transformers at each step, hyper-parameters ranges. 
-- Use `hyperOpt` with the potential search space to beat the baseline.
+Based on the problem at hand, study the potential pipeline structure, algorithms or feature transformers at each step, hyper-parameters ranges. Use `hyperOpt` with the potential search space to beat the baseline.
   - **SOLUTION**: We have defined a hyperparameter search space for the five best baseline classifiers. When running the HPO, the best results (i.e., accuracy) are presented alongside the time it took to reach this result as well as the hyperparameter set used for the best model.
 
 ### Third step :white_check_mark:
