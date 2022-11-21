@@ -28,7 +28,7 @@ Each team (group of three) will work on a machine learning problem from end-to-e
 - **Determine** whether the **difference in performance** between the constructed pipeline and the baseline **is statistically significant**.
   - **SOLUTION**: Because the initial task wanted us to test the different between the baseline model and the model with HPO, we conducted a dependent-samples t-test. The reason for this is that when we are computing the accuracy scores for data splits, the data splits are the same for the both models.
 
-### Final step:
+### Final step: :white_check_mark:
 - **Project write-up and presentation**
-  - SOLUTION: Currently merging the different parts of pipeline into one notebook. Also creating a slide deck for a presentation.
+  - SOLUTION: A cohesive notebook and slides for presentation are created and submitted.
 
